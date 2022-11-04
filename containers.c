@@ -150,7 +150,6 @@ void stackDestroy(Stack stk)
 {
 
     // Destroy nodes
-
     if (stk!=NULL)
     {
         if(stk->top!=NULL && stk->size!=0)
@@ -204,11 +203,19 @@ struct queue
 Queue queueCreate(size_t bytes)
 {
     Queue new=malloc(sizeof(struct queue));
-    new->first=NULL;
-    new->last=NULL;
-    new->size_data=bytes;
-    new->size=0;
-    return new;
+    if (new!=NULL)
+    {
+        new->first=NULL;
+        new->last=NULL;
+        new->size_data=bytes;
+        new->size=0;
+        return new;
+    }
+    else
+    {
+        return NULL;
+    }
+    
 }
 
 int queueSize(Queue q1)
@@ -219,7 +226,7 @@ int queueSize(Queue q1)
     }
     else
     {
-        return 0;
+        return -1;
     }
 }
 
