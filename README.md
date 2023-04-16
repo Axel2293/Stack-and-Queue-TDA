@@ -3,6 +3,7 @@ Stack and Queue containers for generic data, full implementation is available an
 
 ## STACK
 Uses LIFO (Last in - First out) structure to offer push and pop operations.
+
 Requirements:
 - Creating the stack needs the size of the data that youre going to store, for example use sizeof(double) in the stackCreate() as an argument so the stack knows how much data its gona be storing.
 
