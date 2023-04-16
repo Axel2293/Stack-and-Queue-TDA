@@ -9,5 +9,6 @@ Requirements:
 
 ## QUEUE
 Uses FIFO (Firs in - First out) structure to offer enqueue and dequeue operations.
+
 Requirements:
 - Creating the Queue needs the size of the data that youre going to store (same as stack), for example use sizeof(double) in the queueCreate() as an argument so the stack knows how much data its gona be storing.
